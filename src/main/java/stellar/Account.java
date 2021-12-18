@@ -14,7 +14,7 @@ public class Account{
 
     public Account(String accountId) {
 
-        accountId = this.accountId;
+        this.accountId = accountId;
     }
 
     public ArrayList getBalances() {
