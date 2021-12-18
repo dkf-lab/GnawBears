@@ -6,13 +6,13 @@ import org.stellar.sdk.responses.AccountResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 
-class Account{
+public class Account{
 
     String accountId;
 
     static Server server = new Server(variables.network);
 
-    Account(String accountId) {
+    public Account(String accountId) {
 
         accountId = this.accountId;
     }
