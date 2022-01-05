@@ -1,7 +1,7 @@
 package me.dkflab.gnawbears;
 
-import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
+import stellar.Account;
 
 import java.util.Collections;
 import java.util.List;
@@ -14,6 +14,7 @@ public final class GnawBears extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
+        System.out.println(new Account("GC3FVQYZORHWJCU4M72KDTRUHYYBXR6YARVHVWPZF24R2ZN34LQ3BKEC").getBalances());
     }
 
     @Override
@@ -23,6 +24,7 @@ public final class GnawBears extends JavaPlugin {
 
     public String getPlayerWallet(UUID uuid) {
         // UUID is a unique identifier for each player
+        
         return wallet;
     }
 
@@ -30,4 +32,5 @@ public final class GnawBears extends JavaPlugin {
         // Would probably make an NFT() object
         return Collections.singletonList("GNAWBEARS001");
     }
+
 }
