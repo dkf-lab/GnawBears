@@ -3,8 +3,10 @@ package stellar;
 public class variables {
 
     public static String network = "https://horizon.stellar.org"; //"https://horizon-testnet.stellar.org";
+    public static String network2 = "https://horizon.stellar.lobstr.co";
     public static String tomlUrl = "https://gnawbear.litemint.store/.well-known/stellar.toml";
     public static String orgDomain = "gnawbear.litemint.store";
+    public static String wallet = "GBLQSYTWBDP57XEW67AETKXLOCAF7E6XWYAXEF3N3JDYH3E5A2GOANWD";
 }
 
 // Testnet accounts :

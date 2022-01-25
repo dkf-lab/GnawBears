@@ -1,4 +1,5 @@
 package stellar;
+
 import org.stellar.sdk.KeyPair;
 import org.stellar.sdk.Server;
 import org.stellar.sdk.responses.AccountResponse;
@@ -36,6 +37,7 @@ public class Account{
                     if (new NftVerification().verifyAccount(balance.getAssetIssuer().get(), server)) {
 
                         nftArray.add(balance.getAssetCode().get());
+                        System.out.println(balance.getBalance());
                     }
                 }
             }
@@ -59,4 +61,5 @@ public class Account{
         }
         return null;
     }
+
 }
